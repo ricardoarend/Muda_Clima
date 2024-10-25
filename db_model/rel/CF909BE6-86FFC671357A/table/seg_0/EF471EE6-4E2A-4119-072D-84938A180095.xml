@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF471EE6-4E2A-4119-072D-84938A180095" name="INMET">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:40:40 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MUNICIPIO" id="841C1E73-F709-AFD1-486F-D40A4967ACB6">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:43:59 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO" id="312BD883-1218-E86B-F749-F423EBEEDFD5">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:43:59 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES" id="C185DC95-4147-125E-95CB-2367811F4F12">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:44:29 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMP_MIN" id="08680B14-819F-88C1-8F71-BB677787F1FF">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:46:30 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMP_MED" id="FBB88920-0BAA-B002-5B2A-AC4A1C4CB6E5">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:46:45 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMP_MAX" id="861FF93B-7CA3-8ACB-F3B6-CDBAADD4FAEC">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:48:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHUVA" id="1926554D-D95A-EC0F-87D2-9A0B2B840397">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:48:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PS_ATM" id="7CB58F52-84B9-DE99-3DF6-725E72BBF57F">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:48:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
