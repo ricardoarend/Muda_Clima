@@ -8,16 +8,26 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="UF" id="CE1689C2-3E19-782F-7AD7-54ADCEABC91A">
+<Column name="ID" id="BDE1A5BC-CB6E-18CF-0995-7FC082F9A6BC">
 <createdBy>Ricardo</createdBy>
-<createdTime>2024-10-24 17:30:10 UTC</createdTime>
+<createdTime>2024-10-30 01:50:47 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MUNIC" id="C3B3BA7B-50E6-7493-6002-5AE73294D3AD">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 17:35:49 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>6</dataTypeSize>
-<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ANO" id="BBD63C71-33A8-7935-ED1C-BC92379DF441">
@@ -54,18 +64,6 @@
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COD_MUNIC" id="C3B3BA7B-50E6-7493-6002-5AE73294D3AD">
-<createdBy>Ricardo</createdBy>
-<createdTime>2024-10-24 17:35:49 UTC</createdTime>
-<ownerDesignName>db_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="SEXO" id="F00086EA-0EBB-8FE9-D2F1-6DFE52BE3F51">

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B346FA8D-ED45-A0C4-E9A5-CEE124B18BA5" name="MUNICIPIOS">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 17:56:02 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_MUNIC" id="EF27DAB0-7A37-94C3-DD27-C1CF4D29583D">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 17:57:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="5FD12FC4-6AAF-7C26-0C00-51684D623B51">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 17:57:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATI" id="DF14E0B8-576C-CEAD-8733-02044B025B4D">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 17:57:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONG" id="C1D89E46-7FA6-C8C5-E744-8393826172C9">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 17:57:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POP_2000" id="99FE8D93-2FE0-C887-AC52-F6077759D031">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 18:00:41 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POP_2010" id="65909C0C-4095-CBC9-9142-2F47AB6A880F">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 18:01:18 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POP_2021" id="10D2005A-C0FE-EB88-3BB3-DFCC8B79A905">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 18:01:45 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

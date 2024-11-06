@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF471EE6-4E2A-4119-072D-84938A180095" name="INMET">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF471EE6-4E2A-4119-072D-84938A180095" name="INMET_CONV">
 <createdBy>Ricardo</createdBy>
 <createdTime>2024-10-24 20:40:40 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
@@ -8,13 +8,25 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="MUNICIPIO" id="841C1E73-F709-AFD1-486F-D40A4967ACB6">
+<Column name="ID" id="F0DA30FA-EB47-63F4-BB0F-A465E83D221B">
 <createdBy>Ricardo</createdBy>
-<createdTime>2024-10-24 20:43:59 UTC</createdTime>
+<createdTime>2024-10-30 00:37:02 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MUNIC" id="841C1E73-F709-AFD1-486F-D40A4967ACB6">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-24 20:43:59 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ANO" id="312BD883-1218-E86B-F749-F423EBEEDFD5">
@@ -34,8 +46,11 @@
 <createdTime>2024-10-24 20:44:29 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="TEMP_MIN" id="08680B14-819F-88C1-8F71-BB677787F1FF">
@@ -43,8 +58,12 @@
 <createdTime>2024-10-24 20:46:30 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="TEMP_MED" id="FBB88920-0BAA-B002-5B2A-AC4A1C4CB6E5">
@@ -52,8 +71,12 @@
 <createdTime>2024-10-24 20:46:45 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="TEMP_MAX" id="861FF93B-7CA3-8ACB-F3B6-CDBAADD4FAEC">
@@ -61,8 +84,64 @@
 <createdTime>2024-10-24 20:48:06 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEL_VENTO" id="37A7276C-6EE9-A4FF-9E4C-3F4FF03505E8">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-30 00:42:49 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIR_VENTO" id="3FFF4AFE-9574-0951-6292-E1546494B1CD">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-30 00:43:37 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAJ_VENTO" id="071C8EA7-609B-B137-406C-C49C09EF9D88">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-30 00:44:21 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UR_AR" id="8539C597-DC9A-0A8E-16DB-163F8467DCF0">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-30 00:45:02 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CHUVA" id="1926554D-D95A-EC0F-87D2-9A0B2B840397">
@@ -70,13 +149,64 @@
 <createdTime>2024-10-24 20:48:06 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="PS_ATM" id="7CB58F52-84B9-DE99-3DF6-725E72BBF57F">
 <createdBy>Ricardo</createdBy>
 <createdTime>2024-10-24 20:48:06 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INS" id="FEACAA7B-F1FC-D734-F528-C8FA055800C1">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-30 00:46:01 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NDC" id="5596ABB3-3B21-08CB-9F4D-5E0B8C218F54">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-10-30 00:47:40 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATI" id="521FCE01-B2C8-2312-A8A8-3E547F2F8BDF">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 19:49:13 UTC</createdTime>
+<ownerDesignName>db_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONG" id="8BB7C459-CD41-B7CA-C6A6-CA08A61CF6C8">
+<createdBy>Ricardo</createdBy>
+<createdTime>2024-11-01 19:49:52 UTC</createdTime>
 <ownerDesignName>db_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
