@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Temperaturas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Gráfico de Temperaturas</h1>
+
+    <!-- Seletor de Ano -->
+    <label for="anoSelecionado">Selecione o Ano (2000-2020): </label>
+    <select id="anoSelecionado">
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+    </select>
+
+    <button onclick="gerarGraficoTemperaturas()">Gerar Gráfico</button>
+
+    <canvas id="graficoTemperaturas" width="400" height="200"></canvas>
+
+    <script>
+        // Função para buscar os dados climáticos (temperaturas) para um ano específico
+        async function fetchDadosClimaticos(ano) {
+            try {
+                const response = await fetch(`http://localhost:3000/dadosClimaticos?ano=${ano}`);
+                const dados = await response.json();
+                return dados;
+            } catch (error) {
+                console.error("Erro ao buscar dados climáticos:", error);
+                return [];
+            }
+        }
+
+        // Função para gerar o gráfico de temperaturas
+        async function gerarGraficoTemperaturas() {
+            const anoSelecionado = document.getElementById('anoSelecionado').value;
+
+            // Busca os dados climáticos para o ano selecionado
+            const dados = await fetchDadosClimaticos(anoSelecionado);
+
+            // Verifica se os dados existem antes de continuar
+            if (dados.length === 0) {
+                alert("Nenhum dado encontrado para o ano " + anoSelecionado);
+                return;
+            }
+
+            // Nomes dos meses
+            const nomesMeses = [
+                "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+            ];
+
+            // Preparar os dados para o gráfico
+            const meses = dados.map(item => nomesMeses[item.mes - 1]);  // Mapeia o número do mês para o nome
+            const tempMin = dados.map(item => item.temp_min);
+            const tempMed = dados.map(item => item.temp_med);
+            const tempMax = dados.map(item => item.temp_max);
+
+            // Obter o contexto do canvas
+            const ctx = document.getElementById('graficoTemperaturas').getContext('2d');
+
+            // Destruir o gráfico anterior, se existir, para evitar sobreposição
+            if (window.grafico) {
+                window.grafico.destroy();
+            }
+
+            // Criar o gráfico
+            window.grafico = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: meses,
+                    datasets: [
+                        {
+                            label: 'Temperatura Mínima (°C)',
+                            data: tempMin,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            fill: false,
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Temperatura Média (°C)',
+                            data: tempMed,
+                            borderColor: 'rgba(255, 159, 64, 1)',
+                            backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                            fill: false,
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Temperatura Máxima (°C)',
+                            data: tempMax,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            fill: false,
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: 'Temperatura (°C)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Meses'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
